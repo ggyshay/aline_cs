@@ -1,24 +1,21 @@
-# ARA Surface Controler
+# Aline Control Surface
 
-## Controller Structure
+## How to install
 
-Controllers in this project have a `surfaceControl` as the root. You can find the implementation details in the `ARA.py` file.
+- In the green `code` drop down there is the `Download ZIP` button. Download and unzip the folder
+- Rename the folder to Aline
+- Manually create a folder called “Remote Scripts” within your User Library
+- The default User Library location:
+- Windows: \Users\[username]\Documents\Ableton\User Library
+- Mac: Macintosh HD/Users/[username]/Music/Ableton/User Library
+- Place the unzipped remote script into the "Remote Scripts" folder you just created.
+- Launch Live.
+- Connect Aline
+- Open Live's Preferences → MIDI tab.
+- Select the `Aline` script using the dropdown menu in the Control Surface column.
+- Assign Aline as the input.
 
-### Control Surface Elements
+## How does it work
 
-Control Surface Elements are used to represent things like buttons, knobs, sliders, etc. They provide the basic building blocks for creating the controller's user interface.
-
-### Control Surface Components
-
-Control Surface Components are used to represent functionality or behavior of the controller. They encapsulate a set of related control surface elements and define how they interact with the software.
-
-## useful stuff
-
-### Tail abletons logs with
-
-`C:\Documents and Settings\<user>\Application Data\Ableton\Live 9.1\Preferences\`
-on windows or
-
-`/Users/<user>/Library/Preferences/Ableton/Live 9.1/`
-on mac and execute
-`tail -f Log.txt`
+This control surface allows you to insert the frozen clip from aline directly into ableton.
+When you press shift + B within the index mode the instrument is frozen and a new midi clip will show up in Ableton with the content of your resulting sequence.
